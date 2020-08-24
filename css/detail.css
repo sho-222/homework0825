@@ -1,0 +1,174 @@
+@import url("./header.css");
+@import url("./footer.css");
+
+/*
+    -----------------------
+    共通のcontainer設定
+    -----------------------
+*/
+
+.container{
+    padding: 0 0;
+}
+
+/*
+    -----------------------
+    トップ画面
+    -----------------------
+*/
+
+.detail-top {
+    background: rgb(249, 245, 237) center center no-repeat;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .detail-top-inner {
+    width: 100%;
+}
+  
+@media screen and (max-width: 576px){
+    .detail-top-inner {
+        width: 80%;
+    }
+}
+  
+.detail-top-image{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+  
+.detail-top-wrapper{
+    margin: 29px 0 47px 0;
+}
+
+.detail-top-wrapper p:nth-child(1){
+    font-size: 2rem;
+}
+
+.detail-top-wrapper p:nth-child(2){
+    height: 102px;
+    color: #908989;
+}
+
+.detail-top-icon{
+    width: 10%;
+}
+  
+
+
+/*
+    -----------------------
+    お店の情報
+    -----------------------
+*/
+@media screen and (max-width: 576px) {
+    .shop-info-container{
+        width: 80%;
+    }
+}
+
+.shop-cards-second{
+    margin-bottom: 120px;
+}
+
+.shop-table{
+    width: 100%;
+    height: 100%;
+}
+
+.shop-table-cell td:nth-child(1){
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(244, 241, 238);
+}
+
+.shop-table-cell td:nth-child(2){
+    padding: 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 465px){
+    .shop-table-cell td{
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+}
+
+
+
+/*
+    -----------------------
+    プラン情報
+    -----------------------
+*/
+.plan-info-card{
+    background-color: #F4F1EE;
+    border-radius: 8px;
+}
+
+.card-header{
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(156, 102, 45);
+    color: #fff;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.card-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-price p:nth-child(1){
+    margin-top: 1rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-price p:nth-child(2){
+    margin-bottom: 0;
+}
+
+.card-border{
+    width: 100%;
+}
+
+.card-explain p:nth-child(1){
+    font-weight: bold;
+}
+
+.card-explain p:nth-child(2){
+    color: #827F7A;
+}
+
+.card-button{
+    font-size: 1rem;
+    background-color: #FB8F1C;
+    color: #fff;
+}
+
+
+
+/*
+    -----------------------
+    投稿一覧
+    -----------------------
+*/
+.card-text p:nth-child(2){
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 767px){
+    .card-text{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+

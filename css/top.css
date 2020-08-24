@@ -1,0 +1,254 @@
+@import url("./header.css");
+@import url("./footer.css");
+
+/*
+    -----------------------
+    共通のcontainer設定
+    -----------------------
+*/
+
+.container{
+    padding: 0 0;
+}
+ 
+
+/*
+    -----------------------
+    トップ画像
+    -----------------------
+*/
+
+.top-image {
+    background: url('../image/top.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 225px 0px; /*背景画像の高さを確保*/
+    position: relative; /*中の要素の基準値*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.top-image-inner {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+}
+
+.top-image-inner p{
+   text-align: center;
+   font-size: 2rem;
+   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .top-image-inner p {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+/*
+    -----------------------
+    トップ画像 > フォーム部分
+    -----------------------
+*/
+
+.form1{
+    width: 100%;/*フォームのサイズ*/
+    background-color: #fff;
+    border-radius:8px;/*検索ボックスの角を丸める*/
+}
+
+.form-category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    width:100%;
+    position:relative;
+}
+
+.form-stick{
+    height: 70%;
+}
+
+@media screen and (max-width: 767px) {
+    .form-stick{
+        display: none;
+    }
+    .sbtn{
+       border-radius: 0 0 8px 8px !important;
+    }
+}
+
+.form-search{
+    padding: 0 15px;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select{
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: #B8B1AA;
+	background-image: url('../image/shape.jpg');
+	background-repeat: no-repeat;
+	background-size: 20px 15px;
+	background-position: right 30px center;
+	width: 100%;
+	height:56px;/*検索ボックスの高さ*/
+    border: none;
+    outline:0;/*クリック時の青い枠線消す*/
+    padding: 0 0 0 10px;
+    border-radius:8px;/*検索ボックスの角を丸める*/
+}
+
+.sbox2{
+    width: 100%;
+    border: none;
+    outline:0;/*クリック時の青い枠線消す*/
+    height:56px;/*検索ボックスの高さ*/
+    padding: 0 0 0 10px;
+    border-radius:8px;/*検索ボックスの角を丸める*/
+    background: #fff;/*検索ボックスの背景カラー*/
+}
+
+.sbtn{
+    width: 100%;
+    height: 56px;/*検索ボタンの縦幅*/
+    padding: 0 6px;
+    border-radius:0px 8px 8px 0;/*検索ボックスの角を丸める*/
+    background: rgb(251, 143, 28);/*検索ボタンの背景カラー*/
+    border:none;/*検索ボタンの枠線を消す*/
+    color:#fff;/*検索ボタンのテキストカラー*/
+    box-shadow: -8px 0px 23px -5px grey;
+}
+
+.sbtn:hover{
+    color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/
+}
+
+::placeholder {
+    color: #B8B1AA;
+}
+
+
+
+
+
+/*
+    -----------------------
+    注目のお店一覧全体
+    -----------------------
+*/
+
+.select-container{
+    width: 100%;
+    margin-bottom: 3.75rem;
+}
+
+.card-container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.select-top{
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-top-lookbtn, .select-bottom-lookbtn{
+    color: #9C662D;
+}
+
+@media screen and (max-width: 561px) {
+    .select-top-lookbtn {
+        display: none;
+    }
+}
+
+.select-top-lookbtn img, .select-bottom-lookbtn img{
+    transform: rotate(-90deg);
+}
+
+.select-bottom{
+    display: none;
+    text-align: right;
+}
+
+@media screen and (max-width: 561px) {
+    .select-bottom {
+        display: block;
+    }
+}
+
+
+
+
+/*
+    -----------------------
+    注目のお店一覧全体 > カード部分
+    -----------------------
+*/
+.card{
+    margin-bottom: 60px;
+}
+
+.card-img-wrapper{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+/* .card-img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+} */
+
+.select-card-img{
+    width: 153px;
+    height: 153px;
+    margin: 0 auto;
+}
+
+.card-body{
+    padding: 1.25rem 0;
+
+}
+
+.card-body p{
+    font-weight: bold;
+    width: 100%;
+    height: 20%;
+}
+
+.card-body img{
+    width: 100%;
+}
+
+.card-title{
+    width: 100%;
+    height: 20%;
+} 
+
+.card-category{
+    color: rgb(251, 143, 28);
+}
+

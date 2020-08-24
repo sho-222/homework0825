@@ -1,0 +1,71 @@
+/*
+    ---------------------------
+    footer(top, detail共通)のcss
+    ---------------------------
+*/
+
+.page-footer a:link{
+    color: black;
+}
+
+.page-footer a:visited{
+    color: black;
+}
+
+.page-footer{
+    background-color: rgb(249, 245, 237);
+}
+
+.footer-copyright-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-copyright-wrapper{
+        font-size: 0.5rem;
+    }
+}
+
+.footer-img{
+    max-width:100%;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-img{
+        width: 60%;
+    }
+}
+
+.footer-title{
+    color: #9C662D;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .fotter-title{
+        color: #9C662D;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
+.footer-list{
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+.footer-list li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-list li a:link{
+    color: black;
+}
+
+.footer-list li a:visited{
+    color: black;
+}
