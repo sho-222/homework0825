@@ -54,6 +54,10 @@
     color: #908989;
 }
 
+.card-category{
+    color: #FB8F1C;
+}
+
 .detail-top-icon{
     width: 10%;
 }
@@ -107,6 +111,12 @@
     プラン情報
     -----------------------
 */
+@media screen and (max-width: 576px) {
+    .plan-info-container{
+        width: 80%;
+    }
+}
+
 .plan-info-card{
     background-color: #F4F1EE;
     border-radius: 8px;
@@ -161,6 +171,12 @@
     投稿一覧
     -----------------------
 */
+@media screen and (max-width: 576px) {
+    .article-info-container{
+        width: 80%;
+    }
+}
+
 .card-text p:nth-child(2){
     font-size: 0.8rem;
 }
